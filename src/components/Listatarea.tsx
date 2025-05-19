@@ -9,7 +9,7 @@ export const Listatarea = ({ListaTAreas,borrarTarea}: Props) => {
         <div className="taskList">
       {
         ListaTAreas.map((tarea,index)=>
-            <Tarea key={index} tarea={tarea} borrarTArea={()=>borrarTarea}></Tarea>
+            <Tarea key={index} tarea={tarea} borrarTArea={()=>borrarTarea(index)}></Tarea>
         )
       }
         </div>

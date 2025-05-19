@@ -6,7 +6,7 @@ interface TArea {
 
 export const Tarea = ({tarea,borrarTArea}: TArea) => {
     return (
-        <div>
+        <div className="task">
             <span>{tarea}</span>
             <button onClick={borrarTArea}>borrar</button>
         </div>
